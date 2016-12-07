@@ -26,11 +26,12 @@ eureka:
         serviceUrl:
             defaultZone: http://admin:${security.user.password:admin}@localhost:8761/eureka/
 
+
 jhipster:
     security:
         authentication:
             jwt:
-                secret: my-secret-token-to-change-in-production
+                secret: 8ca650b3b91dc9f26a8f4464e607210c97d3942b
                 # Token is valid 24 hours
                 tokenValidityInSeconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
